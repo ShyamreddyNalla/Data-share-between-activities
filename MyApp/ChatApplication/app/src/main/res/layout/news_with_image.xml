@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsTitleWithImage"
+        android:text="News Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:layout_margin="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/img"
+        android:layout_marginTop="36dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@+id/newsTitleWithImage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/newsImageTrump"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
